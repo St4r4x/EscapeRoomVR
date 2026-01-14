@@ -9,17 +9,17 @@ déclencher des choses si les cibles sont touchées. Créer un ennemi.
 
 Liste des TP pour les bases du jeu
 -------------------------------
-1.
-2.
-3.
-4.
-5.
-6.
+1. Créer le projet et mettre sur Github
+2. Tester le simulateur et commencer à faire du level design avec l'Asset Store
+3. Animer une porte
+4. Faire tirer des balles au personnage
+5. Coder une cible qui réagit aux tirs
+6. Faire un ennemi simple
 
-Tâches principales
-- Créer le projet et mettre sur Github
-- Tester le simulateur et commencer à faire du level design avec l'asset store
+Tâches principales (résumé)
+- Créer le projet et le versionner sur GitHub
+- Tester le simulateur et démarrer le level design avec l'Asset Store
 - Animer une porte
-- Faire tirer des balles au personnage
-- Coder une cible qui réagit aux tirs
-- Faire un ennemi simple
+- Implémenter le tir de projectiles pour le personnage
+- Développer une cible réactive aux tirs
+- Concevoir un ennemi simple

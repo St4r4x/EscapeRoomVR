@@ -26,4 +26,15 @@ public class Porte : MonoBehaviour
         }
         
     }
+
+    // Public helper methods so UnityEvents can call them from the Inspector
+    public void OpenDoor()
+    {
+        isOpen = true;
+    }
+
+    public void CloseDoor()
+    {
+        isOpen = false;
+    }
 }

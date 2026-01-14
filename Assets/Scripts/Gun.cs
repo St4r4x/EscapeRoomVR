@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class Gun : MonoBehaviour
 {
     public InputActionReference touche;
+    public GameObject Projectile;
 
     private void OnEnable()
     {
@@ -21,6 +22,6 @@ public class Gun : MonoBehaviour
 
     private void OnTouchePressed(InputAction.CallbackContext obj)
     {
-        print("GOOD");
+        Instantiate(Projectile, transform.position, transform.rotation);
     }
 }

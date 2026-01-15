@@ -15,3 +15,12 @@ déclencher des choses si les cibles sont touchées. Créer un ennemi.
 4. Faire tirer des balles au personnage
 5. Coder une cible qui réagit aux tirs
 6. Faire un ennemi simple
+
+## Fonctionnalités intégrées
+
+- **Cible (Assets/Scripts/Cible.cs):** Le script détruit désormais uniquement l'objet colliseur et affiche "Cible touchée" dans la console si le colliseur a le tag `Projectile` (utilise `Debug.Log`).
+- **Comportement:** Empêche la destruction d'autres objets non liés aux projectiles.
+- **Porte (Assets/Scenes/ & Assets/):** La porte est animée et réagit aux interactions (ouverture via animation déclenchée).
+- **Projectiles (Assets/Projectile.prefab & Assets/Scripts):** Le tir du personnage instancie des projectiles (préfab) qui collident avec les cibles et sont détruits quand ils touchent une `Cible`.
+
+**Prochaine étape:** Faire vibrer la cible (`Cible.cs`) lorsqu'elle est touchée par un projectile.

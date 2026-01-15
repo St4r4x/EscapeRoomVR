@@ -22,15 +22,5 @@ déclencher des choses si les cibles sont touchées. Créer un ennemi.
 - **Comportement:** Empêche la destruction d'autres objets non liés aux projectiles.
 - **Porte (Assets/Scenes/ & Assets/):** La porte est animée et réagit aux interactions (ouverture via animation déclenchée).
 - **Projectiles (Assets/Projectile.prefab & Assets/Scripts):** Le tir du personnage instancie des projectiles (préfab) qui collident avec les cibles et sont détruits quand ils touchent une `Cible`.
-
-**Prochaine étape:** Faire vibrer la cible (`Cible.cs`) lorsqu'elle est touchée par un projectile.
-
-## Détails : Tremblement de la cible
-
-- Paramètres exposés (exemples par défaut) :
-  - `shakeIntensity` = 0.1f (intensité)
+- **Tremblement de la cible :** Intégré — paramètres exposés dans `Assets/Scripts/Cible.cs`.
   - `shakeFrequency` = 20f (fréquence)
-  - `shakeDuration` = 0.5f (durée en secondes)
-- Implémentation : la position locale initiale est stockée; à l'impact d'un `Projectile` on lance un timer et on applique un offset (Perlin noise) multiplié par l'intensité tant que le timer > 0. À la fin, la position est restaurée.
-- Note : la classe a été renommée en `Cible` dans `Assets/Scripts/Cible.cs`.
-
